@@ -1,7 +1,7 @@
-#  超低功耗Sub-1GHz 射频收发器芯片CMT2300A驱动 官方提供DMOE移植到ESP32平台
+#  超低功耗Sub-1GHz 射频收发器芯片CMT2300A驱动 官方提供DMOE移植到ESP32平台 
 
 CMT2300A一个国产射频收发芯片，工作在315MHZ 443MHZ 889MHZ频段，可以用来接收发射无线摇控器，破解汽车胎压监测，汽车钥匙等应用   
-[芯片官方资料下载地址](https://www.hoperf.cn/ic/rf_transceiver/CMT2300A.html) 
+## [芯片官方资料下载地址](https://www.hoperf.cn/ic/rf_transceiver/CMT2300A.html) 
 ## 文件结构   
 cmt2300a.c  **官方提供低层驱动程序**     
 cmt2300a.h **官方驱动程序头文件**   
@@ -26,4 +26,5 @@ EPS23主控，芯片采用gpio口模拟4线spi接口与MCU通讯,实际使用5�
 #define CMT2300A_SPI_FCSB_PIN					25
   ```
 使用RFPKD软件生成配置文件，按照寄存器bank复制到cmt2300a_params.h文件中   
+![软件界面](https://github.com/18252041625/EasyCMT2300A/blob/master/rfpkd.png)
 实例中采用中断方式接收射频信号   
